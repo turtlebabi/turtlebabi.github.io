@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    font-family: Montserrat, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#hero, #about, #projects, #contact {
+    height: 950px;
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    justify-content: center; /* Horizontally center align items */
+    flex-wrap: wrap; /* Allow wrapping to handle small screen sizes */
+    background-color: #232323;
+    text-align: center; /* Center text within hero section */
+}
+#hero h1, #hero p {
+    margin: 0;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+#hero h1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+}
+#hero p {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+    }
+
+    #hero img.left {
+        width: 150px; /* Adjust image size for smaller screens */
+        height: 150px;
+        margin-bottom: 20px; /* Space below the image */
+    }
+
+    #hero h1 {
+        font-size: 2.5rem; /* Further adjust font size */
+    }
+
+    #hero p {
+        font-size: 1.25rem; /* Further adjust font size */
+    }
+}
+p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.canvas {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    background: #232323;
+    overflow: hidden; /* Prevent scrolling of background */
+  }
+
+.canvas-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section {
+  height: 100vh; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: inline-block;
+    z-index: 1; /* Ensure content is above canvas */
+  }
+
+.ghost-button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+
+.ghost-button:hover, .ghost-button:active {
+    background-color: #fff;
+    color: #000;
+}
+
+.ghost-button-semi-transparent {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.ghost-button-semi-transparent:hover, .ghost-button-semi-transparent:active {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.4);
+    transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+#hero {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    flex-wrap: wrap; /* Allow wrapping to handle small screen sizes */
+    background-color: #000000;
+}
+
+#hero img.left {
+    margin-right: 20px; /* Space between image and text */
+  
+}
+
+#hero h1, #hero p {
+    margin: 0; /* Remove default margins */
+}
+
+#hero h1 {
+    font-size: 4rem; /* Adjust font size as needed */
+}
+
+#hero p {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-top: 10px; /* Space between h1 and p */
+}
+
+#about {
+    background-color: blue;
+}
+
+#projects {
+    background-color: blueviolet;
+}
+
+/*#contact {
+    background-color: brown;
+}*/
+img.left {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 15px; /* Optional: Adds space between the image and text */
+    border-radius: 50%;
+    transition: transform 0.3s ease; 
+  }
+  img.left:hover {
+    transform: scale(1.1); /* Zooms in the image by 10% */
+}
+.navigation-bar {
+  position: -webkit-sticky;
+  position:sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  
+}
+
+.navigation {
+  display: flex;
+  margin-right: 10rem;
+  
+  font-weight: 500;
+  letter-spacing: 1px;
+  tra
+}
+
+@media (max-width: 1200px) {
+  .navigation {
+      margin-right: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navigation {
+      margin-right: 0;
+  }
+}
+
+.navigation__item {
+  transition: all 0.2s;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.navigation__item--active {
+  color: #ff4d5a;
+}
+
+.navigation__item:hover {
+  color: #ff4d5a;
+}
+
+li {
+  list-style: none;
+}
+
+.navigation a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fff;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+section {
+ animation: forwards;
+}
+
+/**/
+#contact {
+    background-color: #000000;
+    padding: 20px; /* Add padding for spacing */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children */
+    color: white; /* Ensure text is visible */
+}
+
+#contact h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space between h1 and p */
+}
+
+#contact p {
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space between p and form */
+    text-align: center; /* Center-align text */
+}
+
+form {
+    max-width: 420px; 
+    width: 100%;
+    margin: 0 auto; /* Center-align the form */
+}
+
+.feedback-input {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #CC4949;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #CC6666;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #CC4949;
+}

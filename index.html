@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MARLSHUR JUNDAM</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="canvas">
+        <canvas class="canvas-2"></canvas>
+        <div class="container">
+            <h1>MARLSHUR JUNDAM</h1>
+            <a class="ghost-button" id="know-more-btn" href="#hero">Know More</a>
+        </div>
+    </div>
+
+    <div class="sticky">
+        <nav class="navigation-bar" id="nav-bar">
+            <ul class="navigation">
+                <li class="navigation__item navigation__item--active" id="nav-hero">
+                    <a href="#hero">Home</a>
+                </li>
+                <li class="navigation__item" id="nav-about">
+                    <a href="#about">About</a>
+                </li>
+                <li class="navigation__item" id="nav-projects">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="navigation__item" id="nav-contact">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="hero">
+        <img src="leme.JPG" class="left" alt="Profile Picture">
+        <div>
+            <h1>Hello, I'm Marlshur Jundam</h1>
+            <p>I am an aspiring Software and Web Developer</p>
+        </div>
+        <p>// my portfolio is still under construction but you could browse below about my projects and contact info.</p>
+    </section>
+
+    <section id="contact">
+        <h1>CONTACT</h1>
+        <p>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+        <form>      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="SUBMIT"/>
+        </form>
+    </section>
+    
+    
+
+    <script src="scripts.js"></script>
+    <script src="particlehero.js"></script>
+</body>
+</html>
